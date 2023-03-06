@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors yutent (yutent.io@gmail.com)
+ * @date    2014-10-10 00:45:09
+ *
+ * CSS规范
+ * 
+ * 不能出现大写,以连字符风格命名 
+ * 
+ * 样式规则的出现顺序
+ * 1 display float position overflow z-index 表示定位/布局的属性
+ * 2 width height margin padding border 表示盒子模型的属性
+ * 3 line-height font-size vertical-align text-align user-select outline ....排版相关的属性
+ * 4 color background opacity cursor ...表示装饰相关的属性
+ * 5 content list-style quotes ... 内容生成相关的属性
+ * 
+ */
+
+* {margin: 0;padding: 0;vertical-align: baseline;box-sizing: border-box;}
+::before, ::after {box-sizing: border-box;}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,content {display: block;}
+img {border: 0;display: inline-block;}
+ol,ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote::before, blockquote::after, q::before, q::after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+a:focus,input,textarea,button:focus,input:focus,textarea:focus {outline: none;}
+::-moz-focus-inner {border: none;outline: none;}
+
+body {font-family: 'Helvetica Neue', Arial, 'WenQuanYi Micro Hei', 'PingFang SC', 'Hiragino Sans GB', 'Segoe UI', 'Microsoft Yahei', sans-serif;-webkit-font-smoothing: antialiased;text-size-adjust: 100%;-webkit-tap-highlight-color: transparent;}
+code, pre, samp {font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;white-space:pre-wrap;}
+
+.noselect {-webkit-touch-callout: none;-webkit-user-select: none;-moz-user-select: none;user-select: none;}
+.noselect img, .noselect a {-webkit-user-drag: none;}
+.text-ell {overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.text-thin {-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+
+:root {
+  /* primary */
+  --color-teal-a: rgba(72, 201, 176, 0.35);
+  --color-teal-1: rgb(72, 201, 176);
+  --color-teal-2: rgb(26, 188, 156);
+  --color-teal-3: rgb(22, 160, 133);
+  /* success */
+  --color-green-a: rgba(70, 221, 126, 0.35);
+  --color-green-1: rgb(70, 221, 126);
+  --color-green-2: rgb(47, 208, 105);
+  --color-green-3: rgb(26, 196, 88);
+  /* info */
+  --color-blue-a: rgba(100, 181, 246, 0.35);
+  --color-blue-1: rgb(100, 181, 246);
+  --color-blue-2: rgb(66, 165, 245);
+  --color-blue-3: rgb(33, 150, 243);
+  /* danger */
+  --color-red-a: rgba(252, 118, 97, 0.35);
+  --color-red-1: #fc7661;
+  --color-red-2: #ff5f45;
+  --color-red-3: #f33e22;
+  /* warning */
+  --color-orange-a: rgba(254, 174, 117, 0.35);
+  --color-orange-1: #feae75;
+  --color-orange-2: #fd964b;
+  --color-orange-3: #f97316;
+  /* default1 */
+  --color-plain-a: rgba(150, 204, 248, 0.35);
+  --color-plain-1: rgb(242, 245, 252);
+  --color-plain-2: rgb(232, 235, 244);
+  --color-plain-3: rgb(218, 225, 233);
+  /* default2 */
+  --color-grey-a: rgba(206, 214, 224, 0.35);
+  --color-grey-1: rgb(206, 214, 224);
+  --color-grey-2: rgb(164, 176, 190);
+  --color-grey-3: rgb(134, 144, 155);
+  /* inverse */
+  --color-dark-a: rgba(100, 116, 139, 0.35);
+  --color-dark-1: #64748B;
+  --color-dark-2: #475569;
+  --color-dark-3: #2c3441;
+}
