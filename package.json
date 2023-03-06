@@ -1,0 +1,15 @@
+{
+  "name": "@ninejs/wcui",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9th-js/wcui.git"
+  },
+  "author": "yutent",
+  "license": "MIT"
+}
