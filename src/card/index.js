@@ -64,7 +64,7 @@ class Card extends Component {
   render() {
     return html`
       <div class="card-box">
-        <div class="header">${this.header && '<slot name="header" />'}</div>
+        <div class="header">${this.header || '<slot name="header" />'}</div>
         <div class="content"><slot /></div>
       </div>
     `
