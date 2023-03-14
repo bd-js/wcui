@@ -1,15 +1,22 @@
 {
-  "name": "@ninejs/wcui",
-  "version": "0.0.0",
+  "name": "@bd/wcui",
+  "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
-    "test": ""
+    "start": "wcui-cli dev",
+    "build": "wcui-cli build",
+    "build:es6": "wcui-cli build-es6"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/9th-js/wcui.git"
+    "url": "git+https://github.com/bd-js/wcui.git"
   },
   "author": "yutent",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@bd/wcui-cli": "^1.0.0"
+  }
 }

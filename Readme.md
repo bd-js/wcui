@@ -1,5 +1,5 @@
-# 9th/wcui
-9号UI组件库, 基于web components开发。面向下一代的UI组件库
+# @bd/wcui
+百搭WCUI组件库, 基于web components开发。面向下一代的UI组件库
 
 
 ### 开发环境
@@ -10,6 +10,4 @@
     - `simple http`, 可快速配置http服务器,支持history路由
     - ...
 
-  + @ninejs/core  针对`web components`的核心封装库, 以数据驱动, 可以更方便的开发wc组件
-
-  + @ninejs/cli   开发9号UI组件的构建工具
+  + @bd/core  针对`web components`的核心封装库, 以数据驱动, 可以更方便的开发wc组件
