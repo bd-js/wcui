@@ -1,6 +1,7 @@
 index.html
 test.js
 .vscode
+.httpserver
 node_modules/
 dist/
 *.sublime-project
