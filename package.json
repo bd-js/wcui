@@ -17,6 +17,6 @@
   "author": "yutent",
   "license": "MIT",
   "devDependencies": {
-    "@bd/wcui-cli": "^1.0.1"
+    "@bd/wcui-cli": "^1.0.2"
   }
 }
